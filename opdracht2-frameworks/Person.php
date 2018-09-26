@@ -1,9 +1,23 @@
 <?php
 
-class person {
+class Person
+{
     public $firstname;
     public $middlename;
     public $lastname;
 
-    public $age;
+//    public $age;
+
+    public function __construct($firstname, $lastname)
+    {
+        $this->firstname = $firstname;
+        $this->lastname = $lastname;
+
+    }
+
+    public function getFullname()
+    {
+        return $this->firstname . ' ' . $this->lastname;
+    }
+
 }
