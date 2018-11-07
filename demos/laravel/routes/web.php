@@ -18,6 +18,11 @@ Route::get('/', function () {
 ;
 
 
+Route::get('/test','TestController@test');
+
+;
+
+
 Route::get('/artikel/{nummer}', 'ArticleController@show')
     ->where('nummer', '\d+')
     ->name('artikel.opnummer')

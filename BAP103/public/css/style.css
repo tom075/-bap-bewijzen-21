@@ -1,0 +1,142 @@
+
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+
+
+main{
+    width: 80%;
+    background: rgba(152,152,152,0.49);
+    margin: 0 auto;
+    padding: 10px 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+footer{
+    position: relative;
+    bottom:0;
+    width:100%;
+    height:auto;
+    padding: 1rem;
+    margin-top: 2em;
+    background: rgba(152,152,152,0.49);
+    opacity: 0.6;
+    color: #000;
+
+
+}
+
+
+
+
+
+
+.navbar{
+    background: white;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    font-size: 1.2em;
+
+}
+
+.navbar a{
+    color: black;
+}
+
+
+
+
+.img_wrapper{
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+
+}
+
+
+.home_image{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+button span .icon-bar{
+    color: black;
+}
+
+.active  a{
+    border-bottom: 3px solid red;
+
+}
+
+button{
+    color: #000;
+}
+
+.icon-bar {
+    background-color:#FF0000 !important;
+}
+
+
+
+
+
+
+.plaatje_buiten{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .active  a{
+        border-bottom: none;
+
+    }
+    .plaatje_buiten{
+        width: 100%;
+    }
+}
+
+
+
+.nieuws_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.nieuws_item{
+
+}
+
+.nieuws_image{
+    width: 100%;
+}
+
+.artikel_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.artikel_item{
+
+}
+.artikel_image{
+    width: 50%;
+}
