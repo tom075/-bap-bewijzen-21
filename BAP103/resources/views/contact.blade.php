@@ -21,9 +21,9 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{url('/')}}">Home</a></li>
-                    <li class="active"><a href="{{url('/nieuws')}}">Nieuws</a></li>
+                    <li><a href="{{url('/nieuws')}}">Nieuws</a></li>
                     <li><a href="{{url('/sporten')}}">Sporten</a></li>
-                    <li><a href="{{url('/contact')}}">Contact</a></li>
+                    <li class="active"><a href="{{url('/contact')}}">Contact</a></li>
                     <li><a href="{{url('/inschrijven')}}">Inschrijven</a></li>
 
                 </ul>
@@ -40,32 +40,38 @@
 
 
 @section('content')
-    <h1>Nieuws</h1>
+    <h1>Contact</h1>
+    <h3> HOOFDLOCATIE</h3>
+    <ul>
+        <li>  Sportschool Salomons</li>
+        <li>   Blooksven 10</li>
+        <li> 1504 AN Zaandam</li>
+    </ul>
+    <h3>JUDOJEUGDDEPENDANCES</h3>
+    <p>   Westerwatering</p>
+    <ul>
+    <li>  Gymzaal van Meverstraat</li>
+    <li>   Zaandam</li>
+    </ul>
 
-    <div>
-        <div class="nieuws_wrapper">
-            <div class="nieuws_item">
-                <a href="{{url('artikel/1')}}">  <h1>Herfstvakantie!</h1> </a>
-            <img class="nieuws_image" src="{{url('afb/judo.jpg')}}" alt="">
-            </div>
+    <p>Het Universum</p>
+    <ul>
+        <li>  Gymzaal Th.Weeversweg 4 </li>
+        <li>   Amsterdam Noord </li>
+    </ul>
 
-        <div class="nieuws_item">
-            <p href="{{url('artikel/2')}}"> <h1>Frisse start</h1></p>
-            <img class="nieuws_image" src="{{url('afb/judo.jpg')}}" alt="">
-        </div>
+    <p>  OBS. De Piramide Oostzaan </p>
+    <ul>
+        <li> Pinkstraat Koog a/s Zaan</li>
+        <li> Gymzaal</li>
+    </ul>
 
-    <div class="nieuws_item">
-        <p href="{{url('artikel/2')}}"> <h1>Info Koegras Tijden</h1> </p>
-        <img class="nieuws_image" src="{{url('afb/judo.jpg')}}" alt="">
-    </div>
-
-    </div>
 
 @endsection
 
 
 @section('footer')
-    <p>Wij bieden gratis proeflessen aan om de sfeer te proeven in onze sportruimten.</p>
-@endsection
+<p>Ook in Westerwatering,  Amsterdam Noord en in Koog aan de Zaan verzorgen wij judolessen.
+</p>@endsection
 
 

@@ -17,13 +17,30 @@ Route::get('/', function () {
 })->name('home')
 ;
 
+Route::get('/sporten', function () {
+    return view('sporten');
+//    return "homepage";
+})->name('sporten')
+;
+
+Route::get('/contact', function () {
+    return view('contact');
+//    return "homepage";
+})->name('contact')
+;
+
+Route::get('/inschrijven', function () {
+    return view('inschrijven');
+//    return "homepage";
+})->name('inschrijven')
+;
+
 Route::get('/nieuws', function () {
     return view('nieuws');
 //    return "homepage";
 })->name('nieuws')
 ;
 
-//Route::get('/test','TestController@test');
 
 
 
@@ -41,6 +58,7 @@ Route::get('/artikel/{nummer}', 'ArticleController@show')
 
 
 
+//Route::get('/test','TestController@test');
 
 
 //Route::get('/hoi', function () {

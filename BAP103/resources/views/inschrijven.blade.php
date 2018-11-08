@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{url('/')}}">Home</a></li>
-                    <li class="active"><a href="{{url('/nieuws')}}">Nieuws</a></li>
+                    <li><a href="{{url('/nieuws')}}">Nieuws</a></li>
                     <li><a href="{{url('/sporten')}}">Sporten</a></li>
                     <li><a href="{{url('/contact')}}">Contact</a></li>
-                    <li><a href="{{url('/inschrijven')}}">Inschrijven</a></li>
+                    <li class="active"><a href="{{url('/inschrijven')}}">Inschrijven</a></li>
 
                 </ul>
 
@@ -40,32 +40,22 @@
 
 
 @section('content')
-    <h1>Nieuws</h1>
+    <h1>Inschrijven</h1>
+    <form action="">
+        <label>Voornaam <input type="text"></label><br>
+        <label>Voornaam <input type="text"></label><br>
+        <label>Voornaam <input type="text"></label><br>
+        <label>Voornaam <input type="text"></label><br>
+        <label>Voornaam <input type="text"></label><br>
 
-    <div>
-        <div class="nieuws_wrapper">
-            <div class="nieuws_item">
-                <a href="{{url('artikel/1')}}">  <h1>Herfstvakantie!</h1> </a>
-            <img class="nieuws_image" src="{{url('afb/judo.jpg')}}" alt="">
-            </div>
+    </form>
 
-        <div class="nieuws_item">
-            <p href="{{url('artikel/2')}}"> <h1>Frisse start</h1></p>
-            <img class="nieuws_image" src="{{url('afb/judo.jpg')}}" alt="">
-        </div>
-
-    <div class="nieuws_item">
-        <p href="{{url('artikel/2')}}"> <h1>Info Koegras Tijden</h1> </p>
-        <img class="nieuws_image" src="{{url('afb/judo.jpg')}}" alt="">
-    </div>
-
-    </div>
 
 @endsection
 
 
 @section('footer')
-    <p>Wij bieden gratis proeflessen aan om de sfeer te proeven in onze sportruimten.</p>
+    <p>Nieuwe lessen. GRATIS PROEFLES!</p>
 @endsection
 
 

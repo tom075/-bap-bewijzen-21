@@ -30,9 +30,9 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="{{url('/')}}">Home</a></li>
                             <li><a href="{{url('/nieuws')}}">Nieuws</a></li>
-                            <li><a href="#">Sporten</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Inschrijven</a></li>
+                            <li><a href="{{url('/sporten')}}">Sporten</a></li>
+                            <li><a href="{{url('/contact')}}">Contact</a></li>
+                            <li><a href="{{url('/inschrijven')}}">Inschrijven</a></li>
 
                         </ul>
 
