@@ -41,14 +41,39 @@
 
 @section('content')
     <h1>Inschrijven</h1>
-    <form action="">
-        <label>Voornaam <input type="text"></label><br>
-        <label>Voornaam <input type="text"></label><br>
-        <label>Voornaam <input type="text"></label><br>
-        <label>Voornaam <input type="text"></label><br>
-        <label>Voornaam <input type="text"></label><br>
+    <div class="contact_wrapper">
+        <form action="verzenden.php" method="post">
+            <input type="hidden" name="_token" value="5tiveiqF8Pl507LqoCPeSG9JHtdhPD3P6YO1C7hz">
+            <table class="contact_form">
+                <tr>
+                    <td>VOORNAAM<i class="ster">*</i> </td>
+                    <td class="grey"><input name="voornaam" required autofocus maxlength="20" type="text"></td>
+                </tr>
+                <tr>
+                    <td>TUSSENVOEGSEL</td>
+                    <td class="grey"> <input name="tussenvoegsel"  maxlength="20"  type="text"> </td>
+                </tr>
+                <tr>
+                    <td>ACHTERNAAM<i class="ster">*</i></td>
+                    <td class="grey"> <input name="achternaam" required maxlength="40"  type="text"> </td>
+                </tr>
+                <tr>
+                    <td>E-MAIL<i class="ster">*</i></td>
+                    <td class="grey"> <input name="email" required  maxlength="20" type="email"> </td>
+                </tr>
+                <tr>
+                    <td>TELEFOON NUMMER &nbsp; </td>
+                    <td class="grey"><input name="telefoonnummer" type="tel"  maxlength="15"> </td>
+                </tr>
 
-    </form>
+                <tr>
+                    <td>BERICHT<i class="ster">*</i></td>
+                </tr>
+            </table>
+            <textarea name="bericht" required  cols="30" rows="5"></textarea> <br>
+
+            <input type="submit" name="submit">
+        </form>
 
 
 @endsection
