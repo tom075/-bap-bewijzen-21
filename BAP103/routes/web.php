@@ -9,7 +9,7 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+                                   php */
 
 Route::get('/', function () {
     return view('homepage');
@@ -41,8 +41,18 @@ Route::get('/nieuws', function () {
 })->name('nieuws')
 ;
 
+Route::get('/photo-gallery', 'PhotoGalleryController@listPhotos')
+    ->name('gallery.index');
 
 
+Route::get('/photo-gallery/add-photo', 'PhotoGalleryController@showPhotoForm')
+    ->name('gallery.add_photo');
+
+Route::post('/photo-gallery/add-photo', 'PhotoGalleryController@SavePhotoForm')
+    ->name('gallery.save_photo');
+
+
+route::get('/test-sport', 'SportController@test');
 
 
 Route::get('/artikel/{nummer}', 'ArticleController@show')
@@ -86,3 +96,7 @@ Route::get('/artikel/{nummer}', 'ArticleController@show')
 
 //$dataa = array('joey','carl');
 //return $data;
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
